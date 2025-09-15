@@ -1,3 +1,7 @@
+body{
+    background-color: #FFF5FE;
+}
+
 ul {
     display: flex;
     justify-content:center;
@@ -17,4 +21,23 @@ li {
 .element-milieu{
     display: flex;
     justify-content: center;
+}
+
+a:link{
+    color:pink;
+    text-decoration: none;
+    background-color: aqua;
+}
+
+a:visited{
+    font-family: "Jersey 10";
+}
+
+h1{
+    font-family: "Jersey 10";
+
+}
+
+a:active{
+    color: rebeccapurple;
 }
