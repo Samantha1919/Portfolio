@@ -1,43 +1,43 @@
-body{
+body {
     background-color: #FFF5FE;
 }
 
 ul {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     flex-direction: row;
-    gap:10px;
+    gap: 10px;
 }
 
 li {
     list-style: none;
 }
 
-.titre{
+.titre {
     display: flex;
     justify-content: center;
 }
 
-.element-milieu{
+.element-milieu {
     display: flex;
     justify-content: center;
 }
 
-a:link{
-    color:pink;
+a:link {
+    color: pink;
     text-decoration: none;
     background-color: aqua;
 }
 
-a:visited{
+a:visited {
     font-family: "Jersey 10";
 }
 
-h1{
+h1 {
     font-family: "Jersey 10";
 
 }
 
-a:active{
+a:active {
     color: rebeccapurple;
 }

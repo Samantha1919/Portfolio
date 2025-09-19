@@ -1,9 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="style/contact.css">
+  <link rel="stylesheet" href="style/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Kalnia+Glaze:wght@100..700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="nav">
+    <ul>
+      <li><a href="projets.html" class="projets">Projets</a></li>
+      <li><a href="apropos.html" class="a-propos">A propos</a></li>
+      <li><a href="contact.html" class="contact">Contact</a></li>
+    </ul>
+  </nav>
+  <h1>Contacte moi !</h1>
+
+  <form class="form-container">
+    <fieldset class="form-group">
+      <legend>Informations</legend>
+      <div class="input-group">
+        <legend>Informations obligatoires</legend>
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+      </div>
+      <div class="input-group">
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="input-group">
+        <label for="email">Sujet du message :</label>
+        <input type="text" id="sujet-message" name="text" required>
+      </div>
+      <div class="input-group">
+        <label>Votre message :</label>
+        <textarea placeholder="Expliquez moi la raison de votre contact" required></textarea>
+      </div>
+      <legend>Informations facultatives </legend>
+      <div class="input-group">
+        <label for="email">Préférence de contact</label> <!--ca devrait pas etre 1 lable ??s-->
+        <label for="email" id="email" name="email">Email :</label>
+        <input type="radio" id="contact" name="contact">
+        <label for="num" id="num" name="num">Numero de téléphone :</label>
+        <input type="radio" id="contact" name="contact">
+        <!--le name est le même pour qu'on puisse cocher seulement une chekbox-->
+      </div>
+      <div class="input-group">
+        <label>Voulez vous recevoir notre newsletter </label>
+        <label for="text" name="text" id="text">Non</label>
+        <label>Oui</label>
+        <input type="checkbox" name="choix">
+        <label for="text" name="text" id="text">Non</label>
+        <input type="checkbox" name="choix">
+      </div>
+
+    </fieldset>
+    <button type="submit" class="btn-submit">Envoyer</button>
+  </form>
+
+  <script>
+
+  </script>
+
+</body>
+
 </html>
