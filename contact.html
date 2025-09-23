@@ -15,19 +15,28 @@
   <body>
     <nav class="nav">
       <ul>
-        <li><a href="projets.html" class="projets">Projets</a></li>
-        <li><a href="apropos.html" class="a-propos">A propos</a></li>
-        <li><a href="contact.html" class="contact">Contact</a></li>
+        <li>
+          <a href="index.html" class="accueil">Accueil</a>
+        </li>
+        <li>
+          <a href="projets.html" class="projets">Projets</a>
+        </li>
+        <li>
+          <a href="apropos.html" class="a-propos">A propos</a>
+        </li>
+        <li>
+          <a href="contact.html" class="contact" aria-current="page">Contact</a>
+        </li>
       </ul>
     </nav>
     <h1>Contacte moi !</h1>
 
     <form class="form-container">
       <fieldset class="form-group">
-        <!--infos oblogatoire-->
+        <!--Informations oblogatoires-->
         <legend>Informations obligatoires</legend>
         <div class="input-group">
-          <label for="nom">Nom :</label>
+          <label for="nom">Nom complet :</label>
           <input
             type="text"
             id="nom"
@@ -36,24 +45,54 @@
             aria-describedby="error-nom"
           />
           <div id="error-nom" class="error-messages">Le champs est requis</div>
+          <!--jsp si je change lerreur-->
         </div>
         <div class="input-group">
           <label for="email">Email :</label>
-          <input type="email" id="email" name="email" required />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="nom@domaine.com"
+            required
+            aria-describedby="erreur-email aideEmail"
+          />
+          <!--jsp si c juste dcp vu que jen ai mis 2 mais nromalement cbon vu que g fait comme dans lexemple-->
+          <div id="aideEmail" class="error-messages">
+            Format attendu : nom@domaine.com
+          </div>
+          <div id="erreurEmail" class="error-messages">
+            Adresse invalide, merci de corriger.
+          </div>
         </div>
         <div class="input-group">
-          <label for="email">Sujet du message :</label>
-          <input type="text" id="sujet-message" name="text" required />
+          <label for="text">Sujet du message :</label>
+          <input
+            type="text"
+            id="sujet-message"
+            name="text"
+            required
+            aria-describedby="sujet-vide"
+          />
+          <div id="sujet-vide" class="error-messages">
+            Le champs est vide/requis
+          </div>
         </div>
         <div class="input-group">
-          <label>Votre message :</label>
+          <label for="text">Votre message :</label>
           <textarea
             placeholder="Expliquez moi la raison de votre contact"
             required
+            id="message"
+            aria-describedby="message-vide"
           ></textarea>
+          <div id="message-vide" class="error-messages">
+            Le champs est vide/requis
+          </div>
         </div>
       </fieldset>
-      <fieldset class="infos-fac">
+      <fieldset class="form-group">
+        <!--Informations facultatives-->
         <legend>Informations facultatives</legend>
         <div class="input-group">
           <label for="email">Préférence de contact</label>
@@ -62,7 +101,7 @@
           <input type="radio" id="contact" name="contact" />
           <label for="num" id="num" name="num">Numero de téléphone :</label>
           <input type="radio" id="contact" name="contact" />
-          <!--le name est le même pour qu'on puisse cocher seulement une chekbox-->
+          <!--le name est le même pour qu'on puisse cocher seulement un radio bouton-->
         </div>
         <div class="input-group">
           <p>Voulez vous recevoir notre newsletter</p>
