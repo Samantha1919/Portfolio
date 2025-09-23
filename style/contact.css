@@ -63,3 +63,7 @@ form {
 textarea {
     height: 100%;
 }
+
+legend{
+    font-size: 15px;
+}
