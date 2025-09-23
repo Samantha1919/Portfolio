@@ -42,9 +42,11 @@
             id="nom"
             name="nom"
             required
-            aria-describedby="error-nom"
+            aria-describedby="erreur-nom"
           />
-          <div id="error-nom" class="error-messages">Le champs est requis</div>
+          <div id="erreur-nom" class="erreur-messages">
+            Le champs est requis
+          </div>
           <!--jsp si je change lerreur-->
         </div>
         <div class="input-group">
@@ -55,14 +57,14 @@
             name="email"
             placeholder="nom@domaine.com"
             required
-            aria-describedby="erreur-email aideEmail"
+            aria-describedby="aideEmail erreur-email "
           />
           <!--jsp si c juste dcp vu que jen ai mis 2 mais nromalement cbon vu que g fait comme dans lexemple-->
-          <div id="aideEmail" class="error-messages">
+          <div id="aideEmail" class="erreur-messages">
             Format attendu : nom@domaine.com
           </div>
-          <div id="erreurEmail" class="error-messages">
-            Adresse invalide, merci de corriger.
+          <div id="erreurEmail" class="erreur-messages">
+            Le champs est vide/requis
           </div>
         </div>
         <div class="input-group">
@@ -74,7 +76,7 @@
             required
             aria-describedby="sujet-vide"
           />
-          <div id="sujet-vide" class="error-messages">
+          <div id="sujet-vide" class="erreur-messages">
             Le champs est vide/requis
           </div>
         </div>
@@ -86,7 +88,7 @@
             id="message"
             aria-describedby="message-vide"
           ></textarea>
-          <div id="message-vide" class="error-messages">
+          <div id="message-vide" class="erreur-messages">
             Le champs est vide/requis
           </div>
         </div>
@@ -96,23 +98,116 @@
         <legend>Informations facultatives</legend>
         <div class="input-group">
           <label for="email">Préférence de contact</label>
-          <!--ca devrait pas etre 1 lable ??s-->
-          <label for="email" id="email" name="email">Email :</label>
-          <input type="radio" id="contact" name="contact" />
-          <label for="num" id="num" name="num">Numero de téléphone :</label>
-          <input type="radio" id="contact" name="contact" />
-          <!--le name est le même pour qu'on puisse cocher seulement un radio bouton-->
+          <div class="contact-div">
+            <label for="email" id="email" name="email">Email :</label>
+            <input
+              type="radio"
+              id="email-radio"
+              name="contact"
+              onclick="inputNumero()"
+            />
+          </div>
+          <div class="num-div">
+            <label for="num" id="num" name="num">Numero de téléphone :</label>
+            <input
+              type="radio"
+              id="num-radio"
+              name="contact"
+              onclick="inputNumero()"
+              aria-describedby="numero-vide"
+            />
+            <input type="text" id="num-cache" name="numero" class="numero" />
+            <!--le name est le même pour qu'on puisse cocher seulement un radio bouton-->
+            <div id="numero-vide" class="erreur-messages">
+              Le champs est vide
+            </div>
+          </div>
         </div>
         <div class="input-group">
-          <p>Voulez vous recevoir notre newsletter</p>
+          <label>Voulez vous recevoir notre newsletter</label>
           <label> <input type="radio" name="choix" />Non</label>
           <label> <input type="radio" name="choix" />Oui</label>
         </div>
       </fieldset>
 
-      <button type="submit" class="btn-submit">Envoyer</button>
+      <button
+        type="submit"
+        class="btn-submit"
+        id="bouton"
+        onclick="videOuPas()"
+      >
+        Envoyer
+      </button>
     </form>
 
-    <script></script>
+    <script>
+      let nom = document.getElementById("nom");
+
+      let email = document.getElementById("email");
+
+      let sujetMessage = document.getElementById("sujet-message");
+      let message = document.getElementById("message");
+
+      let numeroInputCache = document.getElementById("num-cache");
+
+      function videOuPas() {
+        let erreurNom = document.getElementById("erreur-nom");
+        let erreurAideEmail = document.getElementById("aideEmail");
+        let erreurEmail = document.getElementById("erreurEmail");
+        let erreurSujetVide = document.getElementById("sujet-vide");
+        let erreurMessageVide = document.getElementById("message-vide");
+        let erreurNumeroVide = document.getElementById("numero-vide");
+        if (nom.value == "") {
+          console.log(nom);
+
+          erreurNom.style.visibility = "visible";
+        } else {
+          erreurNom.style.visibility = "hidden";
+        }
+
+        if (!email.value.includes("@")) {
+          erreurAideEmail.style.visibility = "visible";
+        } else {
+          erreurAideEmail.style.visibility = "hidden";
+        }
+
+        if (email.value == "") {
+          erreurEmail.style.visibility = "visible";
+        } else {
+          erreurEmail.style.visibility = "hidden";
+        }
+
+        if (sujetMessage.value == "") {
+          erreurSujetVide.style.visibility = "visible";
+        } else {
+          erreurSujetVide.style.visibility = "hidden";
+        }
+        if (message.value == "") {
+          erreurMessageVide.style.visibility = "visible";
+        } else {
+          erreurMessageVide.style.visibility = "hidden";
+        }
+
+        if (numeroInputCache.value == "" && choixNum == true) {
+          erreurNumeroVide.style.visibility = "visible";
+        } else {
+          erreurNumeroVide.style.visibility = "hidden";
+        }
+      }
+      let choixNum = false;
+      function inputNumero() {
+        let contactSelection = document.querySelector(
+          'input[name="contact"]:checked'
+        ).id;
+        console.log(contactSelection);
+        if (contactSelection == "num-radio") {
+          choixNum = true;
+          numeroInputCache.style.visibility = "visible";
+        } else {
+          numeroInputCache.style.visibility = "hidden";
+          choixNum = false;
+        }
+      }
+    </script>
   </body>
 </html>

@@ -5,6 +5,7 @@ body {
 h1 {
     font-family: "Jersey 10";
     text-align: center;
+    font-size : 40px;
 }
 
 .form-container {
@@ -66,4 +67,12 @@ textarea {
 
 legend{
     font-size: 15px;
+}
+
+.erreur-messages{
+    visibility: hidden;
+}
+
+.numero{
+    visibility: hidden;
 }
