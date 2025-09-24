@@ -1,0 +1,35 @@
+.projets {
+    width: 300px;
+    height: 300px;
+
+    gap:40px;
+    
+    text-align: center;
+    display: grid;
+     grid-template-columns: auto auto;
+     margin: auto;
+     
+     padding-top: 60px;
+     justify-content: center;
+     
+
+}
+
+article {
+    background-color:#BFE0FF;
+    height: 200px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-family: monospace;
+    font-size: 22px;
+
+   
+}
+
+article:hover{
+    color: #236CF4;
+
+}
