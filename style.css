@@ -1,18 +1,9 @@
-ul {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    gap: 10px;
-    font-family: "Jersey 10";
-}
-
-li {
-    list-style: none;
-}
 
 .titre {
     display: flex;
     justify-content: center;
+    text-align: center;
+    font-size:40px ;
 }
 
 .element-milieu {
