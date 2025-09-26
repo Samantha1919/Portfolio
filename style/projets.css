@@ -17,14 +17,15 @@
 
 article {
     background-color: #BFE0FF;
-    height: 200px;
-    width: 400px;
+    height: 250px;
+    width: 450px;
     display: flex;
     justify-content: center;
     align-content: center;
     text-align: center;
     font-family: monospace;
-    font-size: 22px;
+    font-size: 25px;
+    padding: 30px;
 
 
 }
@@ -32,4 +33,8 @@ article {
 article:hover {
     color: #236CF4;
 
+}
+
+.boobaAttack {
+    scale: 80%;
 }
