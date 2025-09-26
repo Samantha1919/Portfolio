@@ -40,7 +40,7 @@
       <!--Informations oblogatoires-->
       <legend>Informations obligatoires</legend>
       <div class="input-group">
-        <label for="nom">Nom complet :</label>
+        <label for="nom" class="titre-label">Nom complet :</label>
         <input type="text" id="nom" name="nom" placeholder="ex : Jean Dupont" required aria-describedby="erreur-nom" />
         <div id="erreur-nom" class="erreur-messages">
           Le champs est requis
@@ -48,7 +48,7 @@
         <!--jsp si je change lerreur-->
       </div>
       <div class="input-group">
-        <label for="email">Email :</label>
+        <label for="email" class="titre-label">Email :</label>
         <input type="email" id="email" name="email" placeholder="nom@domaine.com" required
           aria-describedby="aideEmail erreur-email " />
         <!--jsp si c juste dcp vu que jen ai mis 2 mais nromalement cbon vu que g fait comme dans lexemple-->
@@ -60,15 +60,17 @@
         </div>
       </div>
       <div class="input-group">
-        <label for="text">Sujet du message :</label>
-        <input type="text" id="sujet-message" name="text" required aria-describedby="sujet-vide" />
+        <label for="text" class="titre-label">Sujet du
+          message :</label>
+        <input type="text" id="sujet-message" name="text" placeholder="Demande de création de site..." required
+          aria-describedby="sujet-vide" />
         <div id="sujet-vide" class="erreur-messages">
           Le champs est vide/requis
         </div>
       </div>
       <div class="input-group">
-        <label for="text">Votre message :</label>
-        <textarea placeholder="Expliquez moi la raison de votre contact" required id="message"
+        <label for="text" class="titre-label">Votre message :</label>
+        <textarea placeholder="Bonjour, j'aimerais un joli site toute rose svp" required id="message"
           aria-describedby="message-vide"></textarea>
         <div id="message-vide" class="erreur-messages">
           Le champs est vide/requis
@@ -79,13 +81,13 @@
       <!--Informations facultatives-->
       <legend>Informations facultatives</legend>
       <div class="input-group">
-        <label for="email">Préférence de contact</label>
+        <label for="email" class="titre-label">Préférence de contact</label>
         <div class="contact-div">
-          <label for="email" id="email" name="email">Email :</label>
+          <label for="email" id="email" name="email" class="choix-label">Email :</label>
           <input type="radio" id="email-radio" name="contact" onclick="inputNumero()" />
         </div>
         <div class="num-div">
-          <label for="num" id="num" name="num">Numero de téléphone :</label>
+          <label for="num" id="num" name="num" class="choix-label">Numero de téléphone :</label>
           <input type="radio" id="num-radio" name="contact" onclick="inputNumero()" aria-describedby="numero-vide" />
           <input type="text" id="num-cache" name="numero" class="numero" />
           <!--le name est le même pour qu'on puisse cocher seulement un radio bouton-->
@@ -95,9 +97,10 @@
         </div>
       </div>
       <div class="input-group">
-        <label>Souhaitez-vous recevoir un mail trèsmarrant dès que je créé un nouveau projet ?</label>
-        <label> <input type="radio" name="choix" />Non</label>
-        <label> <input type="radio" name="choix" />Oui</label>
+        <label class="titre-label">Souhaitez-vous recevoir un mail trèsmarrant dès que je créé un nouveau projet
+          ?</label>
+        <label class="choix-label"> <input type="radio" name="choix" />Non</label>
+        <label class="choix-label"> <input type="radio" name="choix" />Oui</label>
       </div>
     </fieldset>
 

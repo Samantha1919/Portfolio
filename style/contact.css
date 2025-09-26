@@ -7,8 +7,9 @@ h1 {
 .form-container {
     display: flex;
     flex-direction: column;
-    max-width: 500px;
+    max-width: 600px;
     max-height: fit-content;
+    padding: 25px;
     margin: 0 auto;
     gap: 1rem;
     background-color: rgb(246, 222, 243);
@@ -23,6 +24,11 @@ h1 {
     border-radius: 8px;
 }
 
+
+form {
+    font-family: monospace;
+}
+
 .input-group {
     display: flex;
     flex-direction: column;
@@ -31,22 +37,43 @@ h1 {
 
 label {
     margin-bottom: 0.5rem;
-    font-weight: bold;
-    font-size: 16px;
+
 }
+
+
 
 input {
     padding: 0.5rem;
     border: 1px solid #ddd;
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: normal;
+    font-family: monospace;
+}
+
+textarea {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    font-size: 18px;
+}
+
+.titre-label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.choix-label {
+    font-size: 17px;
+    /*je trouvais que 18 ca faisait ttrpo et 16 pas assez*/
 }
 
 .btn-submit {
     align-self: flex-end;
     padding: 0.75rem 1.5rem;
-    background: #007bff;
+    background: #7F1E65;
+    height: 50px;
+    font-size: 20px;
+    font-family: monospace;
     color: white;
     border: none;
     border-radius: 4px;
@@ -54,23 +81,24 @@ input {
 }
 
 .btn-submit:hover {
-    background: #0056b3;
+    background: #511440;
+
 }
 
-form {
-    font-family: monospace;
-}
 
 textarea {
     height: 100%;
 }
 
 legend {
-    font-size: 15px;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .erreur-messages {
     visibility: hidden;
+    font-size: 16px;
+    color: darkred;
 }
 
 .numero {
