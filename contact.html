@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
-    <link rel="stylesheet" href="style/contact.css" />
-    <link rel="stylesheet" href="style/all.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Kalnia+Glaze:wght@100..700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <header>
-      <img src="assets/Logotype.svg" class="logo" id="logo" alt="logo">
-      <nav class="nav">
-     
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="style/contact.css" />
+  <link rel="stylesheet" href="style/all.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Kalnia+Glaze:wght@100..700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <img src="assets/Logotype.svg" class="logo" id="logo" alt="logo">
+    <nav class="nav">
+
       <ul>
         <li>
-          <a href="index.html" class="accueil" >Accueil</a>
+          <a href="index.html" class="accueil">Accueil</a>
         </li>
         <li>
           <a href="projets.html" class="projets-page">Projets</a>
@@ -28,191 +27,154 @@
           <a href="apropos.html" class="a-propos">A propos</a>
         </li>
         <li>
-          <a href="contact.html" class="contact" aria-current="page" >Contact</a>
+          <a href="contact.html" class="contact" aria-current="page">Contact</a>
         </li>
       </ul>
-      
+
     </nav>
   </header>
-    <h1>Contacte moi !</h1>
+  <h1>Contacte moi !</h1>
 
-    <form class="form-container">
-      <fieldset class="form-group">
-        <!--Informations oblogatoires-->
-        <legend>Informations obligatoires</legend>
-        <div class="input-group">
-          <label for="nom">Nom complet :</label>
-          <input
-            type="text"
-            id="nom"
-            name="nom"
-            required
-            aria-describedby="erreur-nom"
-          />
-          <div id="erreur-nom" class="erreur-messages">
-            Le champs est requis
-          </div>
-          <!--jsp si je change lerreur-->
+  <form class="form-container">
+    <fieldset class="form-group">
+      <!--Informations oblogatoires-->
+      <legend>Informations obligatoires</legend>
+      <div class="input-group">
+        <label for="nom">Nom complet :</label>
+        <input type="text" id="nom" name="nom" placeholder="ex : Jean Dupont" required aria-describedby="erreur-nom" />
+        <div id="erreur-nom" class="erreur-messages">
+          Le champs est requis
         </div>
-        <div class="input-group">
-          <label for="email">Email :</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="nom@domaine.com"
-            required
-            aria-describedby="aideEmail erreur-email "
-          />
-          <!--jsp si c juste dcp vu que jen ai mis 2 mais nromalement cbon vu que g fait comme dans lexemple-->
-          <div id="aideEmail" class="erreur-messages">
-            Format attendu : nom@domaine.com
-          </div>
-          <div id="erreurEmail" class="erreur-messages">
-            Le champs est vide/requis
-          </div>
+        <!--jsp si je change lerreur-->
+      </div>
+      <div class="input-group">
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" placeholder="nom@domaine.com" required
+          aria-describedby="aideEmail erreur-email " />
+        <!--jsp si c juste dcp vu que jen ai mis 2 mais nromalement cbon vu que g fait comme dans lexemple-->
+        <div id="aideEmail" class="erreur-messages">
+          Format attendu : nom@domaine.com
         </div>
-        <div class="input-group">
-          <label for="text">Sujet du message :</label>
-          <input
-            type="text"
-            id="sujet-message"
-            name="text"
-            required
-            aria-describedby="sujet-vide"
-          />
-          <div id="sujet-vide" class="erreur-messages">
-            Le champs est vide/requis
-          </div>
+        <div id="erreurEmail" class="erreur-messages">
+          Le champs est vide/requis
         </div>
-        <div class="input-group">
-          <label for="text">Votre message :</label>
-          <textarea
-            placeholder="Expliquez moi la raison de votre contact"
-            required
-            id="message"
-            aria-describedby="message-vide"
-          ></textarea>
-          <div id="message-vide" class="erreur-messages">
-            Le champs est vide/requis
+      </div>
+      <div class="input-group">
+        <label for="text">Sujet du message :</label>
+        <input type="text" id="sujet-message" name="text" required aria-describedby="sujet-vide" />
+        <div id="sujet-vide" class="erreur-messages">
+          Le champs est vide/requis
+        </div>
+      </div>
+      <div class="input-group">
+        <label for="text">Votre message :</label>
+        <textarea placeholder="Expliquez moi la raison de votre contact" required id="message"
+          aria-describedby="message-vide"></textarea>
+        <div id="message-vide" class="erreur-messages">
+          Le champs est vide/requis
+        </div>
+      </div>
+    </fieldset>
+    <fieldset class="form-group">
+      <!--Informations facultatives-->
+      <legend>Informations facultatives</legend>
+      <div class="input-group">
+        <label for="email">Préférence de contact</label>
+        <div class="contact-div">
+          <label for="email" id="email" name="email">Email :</label>
+          <input type="radio" id="email-radio" name="contact" onclick="inputNumero()" />
+        </div>
+        <div class="num-div">
+          <label for="num" id="num" name="num">Numero de téléphone :</label>
+          <input type="radio" id="num-radio" name="contact" onclick="inputNumero()" aria-describedby="numero-vide" />
+          <input type="text" id="num-cache" name="numero" class="numero" />
+          <!--le name est le même pour qu'on puisse cocher seulement un radio bouton-->
+          <div id="numero-vide" class="erreur-messages">
+            Le champs est vide
           </div>
         </div>
-      </fieldset>
-      <fieldset class="form-group">
-        <!--Informations facultatives-->
-        <legend>Informations facultatives</legend>
-        <div class="input-group">
-          <label for="email">Préférence de contact</label>
-          <div class="contact-div">
-            <label for="email" id="email" name="email">Email :</label>
-            <input
-              type="radio"
-              id="email-radio"
-              name="contact"
-              onclick="inputNumero()"
-            />
-          </div>
-          <div class="num-div">
-            <label for="num" id="num" name="num">Numero de téléphone :</label>
-            <input
-              type="radio"
-              id="num-radio"
-              name="contact"
-              onclick="inputNumero()"
-              aria-describedby="numero-vide"
-            />
-            <input type="text" id="num-cache" name="numero" class="numero" />
-            <!--le name est le même pour qu'on puisse cocher seulement un radio bouton-->
-            <div id="numero-vide" class="erreur-messages">
-              Le champs est vide
-            </div>
-          </div>
-        </div>
-        <div class="input-group">
-          <label>Voulez vous recevoir notre newsletter</label>
-          <label> <input type="radio" name="choix" />Non</label>
-          <label> <input type="radio" name="choix" />Oui</label>
-        </div>
-      </fieldset>
+      </div>
+      <div class="input-group">
+        <label>Souhaitez-vous recevoir un mail trèsmarrant dès que je créé un nouveau projet ?</label>
+        <label> <input type="radio" name="choix" />Non</label>
+        <label> <input type="radio" name="choix" />Oui</label>
+      </div>
+    </fieldset>
 
-      <button
-        type="submit"
-        class="btn-submit"
-        id="bouton"
-        onclick="videOuPas()"
-      >
-        Envoyer
-      </button>
-    </form>
+    <button type="submit" class="btn-submit" id="bouton" onclick="videOuPas()">
+      Envoyer
+    </button>
+  </form>
 
-    <script>
-      let nom = document.getElementById("nom");
+  <script>
+    let nom = document.getElementById("nom");
 
-      let email = document.getElementById("email");
+    let email = document.getElementById("email");
 
-      let sujetMessage = document.getElementById("sujet-message");
-      let message = document.getElementById("message");
+    let sujetMessage = document.getElementById("sujet-message");
+    let message = document.getElementById("message");
 
-      let numeroInputCache = document.getElementById("num-cache");
+    let numeroInputCache = document.getElementById("num-cache");
 
-      function videOuPas() {
-        let erreurNom = document.getElementById("erreur-nom");
-        let erreurAideEmail = document.getElementById("aideEmail");
-        let erreurEmail = document.getElementById("erreurEmail");
-        let erreurSujetVide = document.getElementById("sujet-vide");
-        let erreurMessageVide = document.getElementById("message-vide");
-        let erreurNumeroVide = document.getElementById("numero-vide");
-        if (nom.value == "") {
-          console.log(nom);
+    function videOuPas() {
+      let erreurNom = document.getElementById("erreur-nom");
+      let erreurAideEmail = document.getElementById("aideEmail");
+      let erreurEmail = document.getElementById("erreurEmail");
+      let erreurSujetVide = document.getElementById("sujet-vide");
+      let erreurMessageVide = document.getElementById("message-vide");
+      let erreurNumeroVide = document.getElementById("numero-vide");
+      if (nom.value == "") {
+        console.log(nom);
 
-          erreurNom.style.visibility = "visible";
-        } else {
-          erreurNom.style.visibility = "hidden";
-        }
-
-        if (!email.value.includes("@")) {
-          erreurAideEmail.style.visibility = "visible";
-        } else {
-          erreurAideEmail.style.visibility = "hidden";
-        }
-
-        if (email.value == "") {
-          erreurEmail.style.visibility = "visible";
-        } else {
-          erreurEmail.style.visibility = "hidden";
-        }
-
-        if (sujetMessage.value == "") {
-          erreurSujetVide.style.visibility = "visible";
-        } else {
-          erreurSujetVide.style.visibility = "hidden";
-        }
-        if (message.value == "") {
-          erreurMessageVide.style.visibility = "visible";
-        } else {
-          erreurMessageVide.style.visibility = "hidden";
-        }
-
-        if (numeroInputCache.value == "" && choixNum == true) {
-          erreurNumeroVide.style.visibility = "visible";
-        } else {
-          erreurNumeroVide.style.visibility = "hidden";
-        }
+        erreurNom.style.visibility = "visible";
+      } else {
+        erreurNom.style.visibility = "hidden";
       }
-      let choixNum = false;
-      function inputNumero() {
-        let contactSelection = document.querySelector(
-          'input[name="contact"]:checked'
-        ).id;
-        console.log(contactSelection);
-        if (contactSelection == "num-radio") {
-          choixNum = true;
-          numeroInputCache.style.visibility = "visible";
-        } else {
-          numeroInputCache.style.visibility = "hidden";
-          choixNum = false;
-        }
+
+      if (!email.value.includes("@")) {
+        erreurAideEmail.style.visibility = "visible";
+      } else {
+        erreurAideEmail.style.visibility = "hidden";
       }
-    </script>
-  </body>
+
+      if (email.value == "") {
+        erreurEmail.style.visibility = "visible";
+      } else {
+        erreurEmail.style.visibility = "hidden";
+      }
+
+      if (sujetMessage.value == "") {
+        erreurSujetVide.style.visibility = "visible";
+      } else {
+        erreurSujetVide.style.visibility = "hidden";
+      }
+      if (message.value == "") {
+        erreurMessageVide.style.visibility = "visible";
+      } else {
+        erreurMessageVide.style.visibility = "hidden";
+      }
+
+      if (numeroInputCache.value == "" && choixNum == true) {
+        erreurNumeroVide.style.visibility = "visible";
+      } else {
+        erreurNumeroVide.style.visibility = "hidden";
+      }
+    }
+    let choixNum = false;
+    function inputNumero() {
+      let contactSelection = document.querySelector(
+        'input[name="contact"]:checked'
+      ).id;
+      console.log(contactSelection);
+      if (contactSelection == "num-radio") {
+        choixNum = true;
+        numeroInputCache.style.visibility = "visible";
+      } else {
+        numeroInputCache.style.visibility = "hidden";
+        choixNum = false;
+      }
+    }
+  </script>
+</body>
+
 </html>

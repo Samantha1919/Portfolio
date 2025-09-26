@@ -2,21 +2,21 @@
     width: 300px;
     height: 300px;
 
-    gap:40px;
-    
+    gap: 40px;
+
     text-align: center;
     display: grid;
-     grid-template-columns: auto auto;
-     margin: auto;
-     
-     padding-top: 60px;
-     justify-content: center;
-     
+    grid-template-columns: auto auto;
+    margin: auto;
+
+    padding-top: 60px;
+    justify-content: center;
+
 
 }
 
 article {
-    background-color:#BFE0FF;
+    background-color: #BFE0FF;
     height: 200px;
     width: 400px;
     display: flex;
@@ -26,10 +26,10 @@ article {
     font-family: monospace;
     font-size: 22px;
 
-   
+
 }
 
-article:hover{
+article:hover {
     color: #236CF4;
 
 }
