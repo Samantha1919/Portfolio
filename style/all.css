@@ -86,9 +86,17 @@ footer {
     display: flex;
     background-color: #FFABCF;
     align-items: center;
-    justify-content: flex-end;
     height: 200px;
-    justify-content: center;
     flex-direction: row;
+    padding: 10px;
 
+}
+
+.contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 15.487px;
 }
