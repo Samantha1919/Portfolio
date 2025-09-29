@@ -5,10 +5,7 @@
     font-size: 40px;
 }
 
-.element-milieu {
-    display: flex;
-    justify-content: center;
-}
+
 
 
 h1 {
@@ -26,6 +23,12 @@ h1 {
 
 }
 
+.legende{
+      font-family: "Jersey 10";
+      font-size: 24px;
+
+}
+
 .element-milieu {
     display: flex;
     flex-direction: row;
@@ -36,5 +39,19 @@ h1 {
     margin: auto;
     padding: 20px;
     margin-top: 50px;
-    gap: 50px
+    gap: 30px
+}
+
+button {
+    display: flex;
+    max-height: fit-content;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    border: 8px solid  #FFABCF;
+    background:  #7F1E65;
+    font-family: "Jersey 10";
+    font-size: 48px;
+    padding: 0 10px 0 18px;
+    color:#FFF5FE;
 }

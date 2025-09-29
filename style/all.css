@@ -37,6 +37,12 @@ nav a[aria-current="page"] {
 
 }
 
+nav a {
+      color: #7F1E65;
+    text-decoration: none;
+
+}
+
 nav ul {
     margin: 0;
     padding: 0;
@@ -59,10 +65,11 @@ li {
 
 
 
-a {
-    color: #7F1E65;
-    text-decoration: none;
 
+
+.accessibillité{
+    color: black;
+    text-decoration: none;
 }
 
 a:hover {
@@ -77,7 +84,7 @@ h1 {
 
 footer {
     display: flex;
-    background-color: #7F1E65;
+    background-color: #FFABCF;
     align-items: center;
     justify-content: flex-end;
     height: 200px;

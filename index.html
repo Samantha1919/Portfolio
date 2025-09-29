@@ -1,61 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Accueil du protfolio" />
+    <!--a rajouter sur toutes les pages pr la note d'accessibillité-->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style/all.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Kalnia+Glaze:wght@100..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Accueil du protfolio">
-  <!--a rajouter sur toutes les pages pr la note d'accessibillité-->
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="style/all.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Kalnia+Glaze:wght@100..700&display=swap"
-    rel="stylesheet" />
-  <title>Portfolio</title>
-</head>
+  <body>
+    <header>
+      <img src="assets/Logotype.svg" class="logo" id="logo" alt="logo" />
+      <nav class="nav">
+        <ul>
+          <li>
+            <a href="index.html" class="accueil" aria-current="page">Accueil</a>
+          </li>
+          <li>
+            <a href="projets.html" class="projets-page">Projets</a>
+          </li>
+          <li>
+            <a href="apropos.html" class="a-propos">A propos</a>
+          </li>
+          <li>
+            <a href="contact.html" class="contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-  <header>
-    <img src="assets/Logotype.svg" class="logo" id="logo" alt="logo">
-    <nav class="nav">
+    <main>
+      <h1 class="titre">Bienvenue sur le portfolio de Samantha</h1>
+      <section class="element-milieu">
+        <img src="./assets/image.jpg" class="image" />
+        <p class="legende">
+          Salut moi c'est Samantha et je suis en apprentissage en développement
+          d'applications !
+        </p>
+      </section>
+      <section>
+        <button>Découvre mes créations !</button>
+      </section>
+      <section>J'ai des connaissances en :</section>
+    </main>
+    <footer>
+      <div>
+        <div class="teste">Portofolio de Samantha ©</div>
+        <div>Tous droits réservés</div>
+        <div class="footer3">
+          <a class="accessibillité" href="accessibillité.html"
+            >Accessibillité</a
+          >
+        </div>
+      </div>
+      <div class="contact">
+        <div>Contacte moi</div>
+        <div>Samantha1919</div>
+        <div>079 508 47 60</div>
+      </div>
+    </footer>
 
-      <ul>
-        <li>
-          <a href="index.html" class="accueil" aria-current="page">Accueil</a>
-        </li>
-        <li>
-          <a href="projets.html" class="projets-page">Projets</a>
-        </li>
-        <li>
-          <a href="apropos.html" class="a-propos">A propos</a>
-        </li>
-        <li>
-          <a href="contact.html" class="contact">Contact</a>
-        </li>
-      </ul>
-
-    </nav>
-  </header>
-
-
-  <main>
-    <h1 class="titre">Bienvenue sur le portfolio de Samantha</h1>
-    <section class="element-milieu">
-      <img src="./assets/image.jpg" class="image">
-      <p class="legende">Salut moi c'est Samantha et je suis en apprentissage de développements d'applications !</p>
-    </section>
-    <section>
-      <button>Découvre mes projets !</button>
-    </section>
-    <section>
-      J'ai des conaissances en :
-    </section>
-  </main>
-  <footer>
-    <div class="teste">Portofolio de Samantha © Tous droits réservés</div>
-    <div class="test2">Contacte moi Samantha1919 079 508 47 60</div>
-  </footer>
-
-  <!-- zzzzz -->
-</body>
-
+    <!-- zzzzz -->
+  </body>
 </html>
