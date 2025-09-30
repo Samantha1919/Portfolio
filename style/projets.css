@@ -24,12 +24,18 @@ article {
   font-family: monospace;
   font-size: 25px;
   padding: 30px;
+  flex-direction: column;
+  align-items: center;
 }
 
 article:hover {
   color: #236cf4;
 }
 
+a {
+  color: inherit;
+}
+
 .boobaAttack {
-  scale: 80%;
+  width: 70%;
 }

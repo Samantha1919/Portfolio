@@ -35,6 +35,10 @@ nav a {
   text-decoration: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 nav ul {
   margin: 0;
   padding: 0;
@@ -58,7 +62,7 @@ li {
   text-decoration: none;
 }
 
-a:hover {
+nav a:hover {
   color: #eb6e00;
 }
 
