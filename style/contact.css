@@ -1,106 +1,99 @@
 h1 {
-    font-family: "Jersey 10";
-    text-align: center;
-    font-size: 40px;
+  font-family: "Jersey 10";
+  text-align: center;
+  font-size: 40px;
 }
 
 .form-container {
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
-    max-height: fit-content;
-    padding: 25px;
-    margin: 0 auto;
-    gap: 1rem;
-    background-color: rgb(246, 222, 243);
-
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  max-height: fit-content;
+  padding: 25px;
+  margin: 0 auto;
+  gap: 1rem;
+  background-color: rgb(246, 222, 243);
 }
 
 .form-group {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #ccc;
-    padding: 1rem;
-    border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
 }
 
-
 form {
-    font-family: monospace;
+  font-family: monospace;
 }
 
 .input-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
 }
 
 label {
-    margin-bottom: 0.5rem;
-
+  margin-bottom: 0.5rem;
 }
 
-
-
 input {
-    padding: 0.5rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 18px;
-    font-weight: normal;
-    font-family: monospace;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: normal;
+  font-family: monospace;
 }
 
 textarea {
-    padding: 0.5rem;
-    border: 1px solid #ddd;
-    font-size: 18px;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  font-size: 18px;
 }
 
 .titre-label {
-    font-size: 20px;
-    font-weight: bold;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .choix-label {
-    font-size: 17px;
-    /*je trouvais que 18 ca faisait ttrpo et 16 pas assez*/
+  font-size: 17px;
+  /*je trouvais que 18 ca faisait ttrpo et 16 pas assez*/
 }
 
 .btn-submit {
-    align-self: flex-end;
-    padding: 0.75rem 1.5rem;
-    background: #7F1E65;
-    height: 50px;
-    font-size: 20px;
-    font-family: monospace;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  align-self: flex-end;
+  padding: 0.75rem 1.5rem;
+  background: #7f1e65;
+  height: 50px;
+  font-size: 20px;
+  font-family: monospace;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .btn-submit:hover {
-    background: #511440;
-
+  background: #511440;
 }
 
-
 textarea {
-    height: 100%;
+  height: 100%;
 }
 
 legend {
-    font-size: 25px;
-    font-weight: bold;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .erreur-messages {
-    visibility: hidden;
-    font-size: 16px;
-    color: darkred;
+  visibility: hidden;
+  font-size: 16px;
+  color: darkred;
 }
 
 .numero {
-    visibility: hidden;
+  visibility: hidden;
 }

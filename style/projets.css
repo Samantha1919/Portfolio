@@ -1,40 +1,35 @@
 .projets {
-    width: 300px;
-    height: 300px;
+  width: 300px;
+  height: 300px;
 
-    gap: 40px;
+  gap: 40px;
 
-    text-align: center;
-    display: grid;
-    grid-template-columns: auto auto;
-    margin: auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: auto;
 
-    padding-top: 60px;
-    justify-content: center;
-
-
+  padding-top: 60px;
+  justify-content: center;
 }
 
 article {
-    background-color: #BFE0FF;
-    height: 250px;
-    width: 450px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    font-family: monospace;
-    font-size: 25px;
-    padding: 30px;
-
-
+  background-color: #bfe0ff;
+  height: 250px;
+  width: 450px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  font-family: monospace;
+  font-size: 25px;
+  padding: 30px;
 }
 
 article:hover {
-    color: #236CF4;
-
+  color: #236cf4;
 }
 
 .boobaAttack {
-    scale: 80%;
+  scale: 80%;
 }

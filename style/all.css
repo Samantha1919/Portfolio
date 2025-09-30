@@ -1,102 +1,87 @@
 html {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    background-color: #FFF5FE;
-    margin: 0;
-    height: 100%;
-
-
+  background-color: #fff5fe;
+  margin: 0;
+  height: 100%;
 }
 
 header {
-    background-color: #FFABCF;
-    display: flex;
-    height: 70px;
-    justify-content: center;
-    align-items: center;
-
-
+  background-color: #ffabcf;
+  display: flex;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {
-    display: flex;
-    align-self: flex-end;
-    position: absolute;
-    top: 10px;
-    left: 300px;
-    width: 50px;
-    height: 50px;
-
+  display: flex;
+  align-self: flex-end;
+  position: absolute;
+  top: 10px;
+  left: 300px;
+  width: 50px;
+  height: 50px;
 }
 
-
 nav a[aria-current="page"] {
-    color: black;
-
+  color: black;
 }
 
 nav a {
-      color: #7F1E65;
-    text-decoration: none;
-
+  color: #7f1e65;
+  text-decoration: none;
 }
 
 nav ul {
-    margin: 0;
-    padding: 0;
-
+  margin: 0;
+  padding: 0;
 }
 
 ul {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    gap: 60px;
-    font-family: "Jersey 10";
-    font-size: 30px;
-
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 60px;
+  font-family: "Jersey 10";
+  font-size: 30px;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
-
-
-
-
-.accessibillité{
-    color: black;
-    text-decoration: none;
+.accessibillité {
+  color: black;
+  text-decoration: none;
 }
 
 a:hover {
-    color: #EB6E00;
+  color: #eb6e00;
 }
 
 h1 {
-    font-family: "Jersey 10";
-    text-align: center;
-    font-size: 40px;
+  font-family: "Jersey 10";
+  text-align: center;
+  font-size: 40px;
 }
 
 footer {
-    display: flex;
-    background-color: #FFABCF;
-    align-items: center;
-    height: 200px;
-    flex-direction: row;
-    padding: 10px;
-
+  display: flex;
+  background-color: #ffabcf;
+  align-items: center;
+  height: 200px;
+  flex-direction: row;
+  padding: 10px;
 }
 
-.contact{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    gap: 15.487px;
+.contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 15.487px;
 }
