@@ -3,15 +3,18 @@ body {
 
   height: 100vh;
 }
+
 h1 {
   margin-bottom: 20px;
 }
+
 .board {
   display: grid;
   grid-template-columns: repeat(3, 100px);
   grid-template-rows: repeat(3, 100px);
   gap: 5px;
 }
+
 .cell {
   width: 100px;
   height: 100px;
@@ -23,14 +26,17 @@ h1 {
   font-size: 2em;
   cursor: pointer;
 }
+
 .cell.taken {
   cursor: not-allowed;
 }
+
 #status {
   margin-top: 20px;
   font-size: 25px;
   font-family: "Jersey 10";
 }
+
 button {
   margin-top: 15px;
   padding: 10px 20px;
@@ -43,7 +49,6 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: calc(
-    100vh - 70px
-  ); /* ca le met un peu plus ai milieu c'est une ptite fomction de maths et on lui soustrait la hauteur du header qui est dans le all.css */
+  height: calc(100vh - 70px);
+  /* ca le met un peu plus ai milieu c'est une ptite fomction de maths et on lui soustrait la hauteur du header qui est dans le all.css */
 }
