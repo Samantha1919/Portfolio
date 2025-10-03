@@ -79,6 +79,7 @@ footer {
   height: 200px;
   flex-direction: row;
   padding: 10px;
+  font-family: 'Jersey 10';
 }
 
 .contact {
