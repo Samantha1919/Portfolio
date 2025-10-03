@@ -76,10 +76,11 @@ footer {
   display: flex;
   background-color: #ffabcf;
   align-items: center;
-  height: 200px;
+  height: 150px;
   flex-direction: row;
   padding: 10px;
   font-family: 'Jersey 10';
+  font-size: 18px;
 }
 
 .contact {
@@ -88,5 +89,5 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  gap: 15.487px;
+  gap: 5px;
 }

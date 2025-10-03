@@ -55,3 +55,14 @@ button {
     padding: 0 10px 0 18px;
     color: #FFF5FE;
 }
+
+.connaissances {
+    font-family: "Jersey 10";
+    background-color: darkviolet;
+    height: 500px;
+}
+
+
+.logos img {
+    height: 100px;
+}
