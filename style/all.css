@@ -37,6 +37,7 @@ nav a {
 
 a {
   text-decoration: none;
+  color:inherit;
 }
 
 nav ul {
@@ -86,12 +87,3 @@ footer {
 
 }
 
-.contact {
-
- 
-
-}
-
-.infos-footer {
-
-}

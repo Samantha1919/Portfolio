@@ -22,7 +22,6 @@ article {
   align-content: center;
   text-align: center;
   font-family: monospace;
-  /* supprimer ca qd jaurai mis des h2 sur tout */
   font-size: 25px;
   padding: 30px;
   flex-direction: column;
@@ -41,7 +40,3 @@ a {
   width: 70%;
 }
 
-h2 {
-  font-size: 25px;
-  font-family: monospace;
-}

@@ -37,7 +37,7 @@
       <legend>Informations obligatoires</legend>
       <div class="input-group">
         <label for="nom" class="titre-label">Nom complet :</label>
-        <input type="nom" id="nom" name="nom" placeholder="ex : Jean Dupont" required aria-describedby="erreur-nom" />
+        <input type="nom" id="nom" name="nom" placeholder="Exemple : Jean Dupont" required aria-describedby="erreur-nom" />
         <div id="erreur-nom" class="erreur-messages">
           Le champs est requis
         </div>
@@ -55,7 +55,7 @@
           Le champs est vide/requis
         </div>
       </div>
-      <div class="input-group">
+      <div class="input-group"> <!--mettre list grp ez faire une nvl classe pr le css de la liste-->
         <label for="sujet-message" class="titre-label">Sujet du message :</label>
         <!-- <input type="text" id="sujet-message" name="sujet-message" placeholder="Demande de création de site..." required
           aria-describedby="sujet-vide" /> -->
@@ -66,7 +66,7 @@
             <option id="option-autre">Autre</option>
             <input class="input-autre" id="input-autre">
           </select>
-        <div id="sujet-vide" class="erreur-messages">
+        <div id="sujet-vide" class="erreur-messages"> <!--pk le message d'eerreur ne marche pas-->
           Le champs est vide/requis
         </div>
       </div>
@@ -76,7 +76,7 @@
           aria-describedby="message-vide"></textarea>
         <div id="message-vide" class="erreur-messages">
           Le champs est vide/requis
-        </div>
+        </div> <!--pk le message d'erreur marche pas-->
       </div>
     </fieldset>
     <fieldset class="form-group">
@@ -196,10 +196,6 @@
            inputAutre.style.visibility = "hidden";
         }
     }
-
-    
- 
-
 
   </script>
 </body>
