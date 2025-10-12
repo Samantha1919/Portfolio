@@ -7,7 +7,7 @@
   <meta name="description" content="Formulaire de contact du protfolio" />
   <title>Contact</title>
   <link rel="stylesheet" href="../style/contact.css" />
-  <link rel="stylesheet" href="../style/all.css" />
+  <link rel="stylesheet" href="../style/tous.css" />
   <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Kalnia+Glaze:wght@100..700&display=swap"
     rel="stylesheet" />
 </head>
@@ -53,7 +53,7 @@
           Format attendu : nom@domaine.com
         </div>
         <div id="erreurEmail" class="erreur-messages">
-          Le champs est vide/requis
+          Le champs est requis
         </div>
       </div>
       <div class="input-group"> <!--mettre list grp ez faire une nvl classe pr le css de la liste-->
@@ -68,7 +68,7 @@
             <input class="input-autre" id="input-autre">
           </select>
         <div id="sujet-vide" class="erreur-messages"> <!--pk le message d'eerreur ne marche pas-->
-          Le champs est vide/requis
+          Le champs est requis
         </div>
       </div>
       <div class="input-group">
@@ -135,7 +135,7 @@
     let email = document.getElementById("email");
 
     let sujetMessage = document.getElementById("sujet-message");
-    let message = document.getElementById("message");
+    let message = document.getElementById("votre-message");
 
     let numeroInputCache = document.getElementById("num-cache");
 
