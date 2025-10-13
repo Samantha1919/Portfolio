@@ -33,6 +33,17 @@ form {
   margin-bottom: 1rem;
 }
 
+select {
+  font-size: 15px;
+  height: 40px;
+  font-family: monospace;
+  background-color: #ffffff;
+}
+
+.input-autre {
+  margin-top: 5px;
+}
+
 label {
   margin-bottom: 0.5rem;
 }
@@ -98,6 +109,6 @@ legend {
   visibility: hidden;
 }
 
-.input-autre{
+.input-autre {
   visibility: hidden;
 }
