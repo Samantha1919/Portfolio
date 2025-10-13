@@ -1,79 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Accueil du portfolio" />
+    <!--a rajouter sur toutes les pages pr la note d'accessibillité-->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style/tous.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Kalnia+Glaze:wght@100..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Accueil du portfolio" />
-  <!--a rajouter sur toutes les pages pr la note d'accessibillité-->
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="style/tous.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Kalnia+Glaze:wght@100..700&display=swap"
-    rel="stylesheet" />
-  <title>Portfolio</title>
-</head>
+  <body>
+    <header>
+      <img src="./assets/Logotype.svg" class="logo" id="logo" alt="logo" />
+      <nav class="nav">
+        <ul>
+          <li>
+            <a href="index.html" class="accueil" aria-current="page">Accueil</a>
+          </li>
+          <li>
+            <a href="./html/projets.html" class="projets-page">Projets</a>
+          </li>
+          <li>
+            <a href="./html/contact.html" class="contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-  <header>
-    <img src="./assets/Logotype.svg" class="logo" id="logo" alt="logo" />
-    <nav class="nav">
-      <ul>
-        <li>
-          <a href="index.html" class="accueil" aria-current="page">Accueil</a>
-        </li>
-        <li>
-          <a href="./html/projets.html" class="projets-page">Projets</a>
-        </li>
-        <li>
-          <a href="./html/contact.html" class="contact">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <h1 class="titre">Bienvenue sur le portfolio de Samantha</h1>
-    <section class="element-milieu">
-      <img src="./assets/image.jpg" class="image" alt="photo-du-dev" />
-      <p class="legende">
-        Salut moi c'est Samantha et je suis en apprentissage <br />
-        en développement d'applications !
-      </p>
-    </section>
-    <section>
-      <button onclick="document.location.href='./html/projets.html'">Découvre mes créations</button>
-    </section>
-    <section class="connaissances">
-      <h2>J'ai des connaissances en :</h2>
-      <article class="logos">
-        <img src="./assets/html-icon.svg" class="logo-html" id="logo-html" alt="logo-html">
-        <img src="./assets/css-3.svg" class="logo-css" id="logo-css" alt="logo-css">
-        <img src="./assets/js-logo.svg" class="logo-js" id="logo-js" alt="logo-js">
-        <img src="./assets/PHP-logo.svg" class="logo-php" id="logo-php" alt="logo-php">
-        <img src="./assets/mysql-icon.svg" class="logo-sql" id="logo-sql" alt="logo-sql">
-        <img src="./assets/Python-logo-notext.svg" class="logo-python" id="logo-python" alt="logo-python">
-        <img src="./assets/Logo_C_sharp.svg" class="logo-csharp" id="logo-csharp" alt="logo-csharp">
-        <img src="./assets/docker.svg" class="logo-docker" id="logo-docker" alt="logo-docker">
-        <img src="./assets/Octicons-mark-github.svg" class="logo-github" id="logo-github" alt="logo-github">
-        <img src="./assets/Figma-logo.svg" class="logo-figma" id="logo-figma" alt="logo-figma">
-
-      </article>
-    </section>
-  </main>
-  <footer>
-    <section class="teste">
-      <article class="infos-footer">
-        <p>Portofolio de Samantha ©</p>
-        <p>Tous droits réservés</p>
-        <a class="accessibillité" href="./html/accessibillité.html">Accessibillité</a>
-      </article>
-      <article class="contact">
-        <p>Contacte moi</p> <!--cmmt faire pr que ca soit lisible mais dcp san setre un lien mais il faut pourvoir naviguer dans les éléments du footer pr les avuegles-->
-        <a href="https://github.com/Samantha1919">Samantha1919</a>
-        <p>079 508 47 60</p>
-      </article>
-    </section>
-  </footer>
-</body>
-
+    <main>
+      <h1 class="titre">Bienvenue sur le portfolio de Samantha</h1>
+      <section class="element-milieu">
+        <img src="./assets/image.jpg" class="image" alt="photo-du-dev" />
+        <p class="legende">
+          Salut moi c'est Samantha et je suis en apprentissage <br />
+          en développement d'applications !
+        </p>
+      </section>
+      <section>
+        <button onclick="document.location.href='./html/projets.html'">
+          Découvre mes créations
+        </button>
+      </section>
+      <section class="connaissances">
+        <h2>J'ai des connaissances en :</h2>
+        <article class="logos">
+          <img
+            src="./assets/html-icon.svg"
+            class="logo-html"
+            id="logo-html"
+            alt="logo-html"
+          />
+          <img
+            src="./assets/css-3.svg"
+            class="logo-css"
+            id="logo-css"
+            alt="logo-css"
+          />
+          <img
+            src="./assets/js-logo.svg"
+            class="logo-js"
+            id="logo-js"
+            alt="logo-js"
+          />
+          <img
+            src="./assets/PHP-logo.svg"
+            class="logo-php"
+            id="logo-php"
+            alt="logo-php"
+          />
+          <img
+            src="./assets/mysql-icon.svg"
+            class="logo-sql"
+            id="logo-sql"
+            alt="logo-sql"
+          />
+          <img
+            src="./assets/Python-logo-notext.svg"
+            class="logo-python"
+            id="logo-python"
+            alt="logo-python"
+          />
+          <img
+            src="./assets/Logo_C_sharp.svg"
+            class="logo-csharp"
+            id="logo-csharp"
+            alt="logo-csharp"
+          />
+          <img
+            src="./assets/docker.svg"
+            class="logo-docker"
+            id="logo-docker"
+            alt="logo-docker"
+          />
+          <img
+            src="./assets/Octicons-mark-github.svg"
+            class="logo-github"
+            id="logo-github"
+            alt="logo-github"
+          />
+          <img
+            src="./assets/Figma-logo.svg"
+            class="logo-figma"
+            id="logo-figma"
+            alt="logo-figma"
+          />
+        </article>
+      </section>
+    </main>
+    <footer>
+      <section class="teste">
+        <article class="infos-footer">
+          <p>Portofolio de Samantha ©</p>
+          <p>Tous droits réservés</p>
+          <a class="accessibillité" href="./html/accessibillité.html"
+            >Accessibillité</a
+          >
+        </article>
+        <article class="contact">
+          <p>Contacte moi</p>
+          <!--cmmt faire pr que ca soit lisible mais dcp san setre un lien mais il faut pourvoir naviguer dans les éléments du footer pr les avuegles-->
+          <a href="https://github.com/Samantha1919">Samantha1919</a>
+          <p>079 508 47 60</p>
+        </article>
+      </section>
+    </footer>
+  </body>
 </html>

@@ -1,7 +1,6 @@
 .projets {
   width: 300px;
 
-
   gap: 40px;
 
   text-align: center;
@@ -13,13 +12,12 @@
   justify-content: center;
 }
 
- .projet {
+.projet {
   background-color: #bfe0ff;
   height: 250px;
   width: 450px;
   display: flex;
   justify-content: center;
-  align-content: center;
   text-align: center;
   font-family: monospace;
   font-size: 25px;
@@ -34,9 +32,17 @@ article:hover {
 
 a {
   color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+  flex-direction: column;
 }
 
 .boobaAttack {
   width: 70%;
 }
 
+.image-projet {
+  height: 200px;
+}
