@@ -37,7 +37,7 @@ nav a {
 
 a {
   text-decoration: none;
-  color:inherit;
+  color: inherit;
 }
 
 nav ul {
@@ -75,9 +75,9 @@ h1 {
 
 footer {
   background-color: #ffabcf;
-  
+
   padding: 10px;
-  font-family: 'Jersey 10';
+  font-family: "Jersey 10";
   font-size: 20px;
   margin-top: 30px;
 }
@@ -85,6 +85,4 @@ footer {
 .teste {
   display: flex;
   justify-content: space-between;
-
 }
-

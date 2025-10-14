@@ -1,81 +1,86 @@
 .titre {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 40px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 40px;
 }
 
-
-
-
 h1 {
-    font-family: "Jersey 10";
-
+  font-family: "Jersey 10";
 }
 
 h2 {
-    font-size: 40px;
+  font-size: 40px;
+  font-family: "Jersey 10";
+  text-align: center;
+  color: black;
 }
 
-
-
 .image {
-    width: 250px;
-    height: 320px;
-    border-radius: 179px;
-
-
+  width: 250px;
+  height: 250px;
+  border-radius: 179px;
 }
 
 .legende {
-    font-family: "Jersey 10";
-    font-size: 25px;
-
+  font-family: "Jersey 10";
+  font-size: 25px;
 }
 
 .element-milieu {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #fd93c1;
-    align-items: center;
-    max-width: fit-content;
-    margin: auto;
-    padding: 20px;
-    margin: 50px auto;
-    gap: 30px
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #fd93c1;
+  align-items: center;
+  max-width: fit-content;
+  margin: auto;
+  padding: 20px;
+  margin: 50px auto;
+  gap: 30px;
 }
 
 button {
-    display: flex;
-    max-height: fit-content;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-    border: 8px solid #FFABCF;
-    background: #7F1E65;
-    font-family: "Jersey 10";
-    font-size: 48px;
-    padding: 0 10px 0 18px;
-    color: #FFF5FE;
+  display: flex;
+  max-height: fit-content;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  border: 8px solid #ffabcf;
+  background: #7f1e65;
+  font-family: "Jersey 10";
+  font-size: 48px;
+  padding: 0 10px 0 18px;
+  color: #fff5fe;
+}
+
+section.connaissances {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Jersey 10";
+
+  height: 400px;
+  width: 1400px;
+  margin-bottom: 100px;
 }
 
 .connaissances {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    font-family: "Jersey 10";
-   
-    height: 420px;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 
-
 .logos img {
-    height: 100px;
+  height: 100px;
+  background-color: #ffabcf;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .creations {
-    color: white;
+  color: white;
 }
