@@ -75,6 +75,7 @@ section.connaissances {
 
 .logos img {
   height: 100px;
+  width: max-content;
   background-color: #ffabcf;
   border-radius: 12px;
   padding: 10px;
