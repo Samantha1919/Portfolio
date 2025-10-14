@@ -50,7 +50,7 @@
               aria-describedby="erreur-nom"
             />
             <div id="erreur-nom" class="erreur-messages">
-              Le champs est requis
+              Le champ est requis
             </div>
             <!--jsp si je change lerreur-->
           </div>
@@ -69,7 +69,7 @@
               Format attendu : nom@domaine.com
             </div>
             <div id="erreurEmail" class="erreur-messages">
-              Le champs est requis
+              Le champ est requis
             </div>
           </div>
           <div class="input-group">
@@ -94,7 +94,7 @@
             </select>
             <div id="sujet-vide" class="erreur-messages">
               <!--pk le message d'eerreur ne marche pas-->
-              Le champs est requis
+              Le champ est vide
             </div>
           </div>
           <div class="input-group">
@@ -108,7 +108,7 @@
               aria-describedby="message-vide"
             ></textarea>
             <div id="message-vide" class="erreur-messages">
-              Le champs est vide
+              Le champ est vide
             </div>
             <!--pk le message d'erreur marche pas-->
           </div>
@@ -153,7 +153,7 @@
               <input type="text" id="num-cache" name="numero" class="numero" />
               <!--le name est le même pour qu'on puisse cocher seulement un radio bouton-->
               <div id="numero-vide" class="erreur-messages">
-                Le champs est vide
+                Le champ est vide
               </div>
             </div>
           </div>
@@ -216,6 +216,7 @@
         let erreurSujetVide = document.getElementById("sujet-vide");
         let erreurMessageVide = document.getElementById("message-vide");
         let erreurNumeroVide = document.getElementById("numero-vide");
+
         if (nom.value == "") {
           console.log(nom);
 
@@ -236,7 +237,9 @@
           erreurEmail.style.visibility = "hidden";
         }
 
-        if (sujetMessage.value == "") {
+        if (inputAutre.value == "") {
+          // ?
+          alert("test");
           erreurSujetVide.style.visibility = "visible";
         } else {
           erreurSujetVide.style.visibility = "hidden";
@@ -268,8 +271,9 @@
         }
       }
 
+      let inputAutre = document.getElementById("input-autre");
+
       function afficherInputAutre() {
-        let inputAutre = document.getElementById("input-autre");
         let sujetMessage = document.getElementById("sujet-message");
         if (sujetMessage.value == "Autre")
           inputAutre.style.visibility = "visible";

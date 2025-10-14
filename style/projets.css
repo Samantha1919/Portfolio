@@ -26,17 +26,21 @@
   align-items: center;
 }
 
-article:hover {
+.projet:hover {
   color: #236cf4;
 }
 
-a {
+.lien-projet {
   color: inherit;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: start;
   flex-direction: column;
+}
+
+a {
+  color: inherit;
 }
 
 .boobaAttack {
